@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="am">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#17110c">
+<meta name="description" content="Maya Furniture — custom home and office furniture, kitchen cabinets, doors, wardrobes and more.">
+<title>Maya Furniture | Design • Make • Live Better</title>
+<style>
+:root{--ink:#21170f;--dark:#17110c;--wood:#4b2b18;--gold:#c99a3b;--gold2:#f0d28a;--cream:#f7f1e7;--muted:#786d61;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#fbf8f2;color:var(--ink);font-family:Arial,"Noto Sans Ethiopic",sans-serif;line-height:1.6}
+a{color:inherit;text-decoration:none}.wrap{width:min(1160px,92%);margin:auto}
+header{position:sticky;top:0;z-index:10;background:rgba(23,17,12,.96);backdrop-filter:blur(12px);border-bottom:1px solid rgba(201,154,59,.35);color:#fff}
+.nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+.brand{display:flex;align-items:center;gap:11px;font-weight:900;letter-spacing:1px}.brand-mark{width:46px;height:46px;border:2px solid var(--gold);border-radius:13px;display:grid;place-items:center;color:var(--gold2);font-family:Georgia,serif;font-size:28px;font-weight:bold;position:relative}.brand-mark:after{content:"";position:absolute;top:-7px;left:7px;width:28px;height:17px;border-top:3px solid var(--gold);border-left:3px solid var(--gold);transform:rotate(45deg)}
+.brand small{display:block;font-size:10px;letter-spacing:3px;color:var(--gold2);font-weight:600}
+nav{display:flex;gap:22px;align-items:center;font-size:14px;color:#f5ead8}nav a:hover{color:var(--gold2)}
+.nav-actions{display:flex;gap:9px;align-items:center}.lang,.menu{border:1px solid var(--gold);background:transparent;color:#fff;border-radius:999px;padding:9px 13px;cursor:pointer;font-weight:700}.menu{display:none}
+.hero{background:radial-gradient(ellipse at 78% 35%,#76502c 0,#342315 38%,#17110c 78%);color:#fff;overflow:hidden;position:relative}
+.hero:after{content:"";position:absolute;right:-110px;top:-180px;width:570px;height:570px;border:1px solid rgba(240,210,138,.22);border-radius:50%;box-shadow:0 0 0 35px rgba(240,210,138,.035),0 0 0 75px rgba(240,210,138,.025)}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:35px;align-items:center;min-height:560px;padding:72px 0;position:relative;z-index:1}
+.eyebrow{color:var(--gold2);text-transform:uppercase;letter-spacing:3px;font-size:12px;font-weight:800}.hero h1{font-family:Georgia,serif;font-size:clamp(46px,7vw,82px);line-height:.98;margin:18px 0;color:#f7e6bf}.hero h1 span{display:block;color:#fff;font-size:.48em;letter-spacing:7px;margin-top:18px}
+.hero p{max-width:540px;color:#e6d9c7;font-size:18px}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 20px;border-radius:8px;font-weight:800;border:1px solid var(--gold);transition:.2s}.btn.primary{background:linear-gradient(135deg,#f0d28a,#b77b21);color:#21170f}.btn.outline{color:#fff}.btn:hover{transform:translateY(-2px);filter:brightness(1.08)}
+.hero-art{min-height:370px;display:grid;place-items:center;position:relative}.emblem{width:min(390px,90%);aspect-ratio:1;border:2px solid rgba(240,210,138,.8);border-radius:46% 46% 22% 22%;display:grid;place-items:center;position:relative;background:linear-gradient(145deg,rgba(255,255,255,.09),rgba(0,0,0,.25));box-shadow:0 25px 70px #0008,inset 0 0 50px #d7a84b22}.emblem:before{content:"";position:absolute;top:14%;left:20%;width:60%;height:40%;border-top:9px solid var(--gold2);border-left:9px solid var(--gold2);transform:rotate(45deg);border-radius:5px}.emblem strong{font: bold clamp(120px,20vw,210px)/1 Georgia,serif;color:#d6a74e;text-shadow:3px 4px 0 #583718,0 0 22px #f0d28a88;z-index:1}.emblem small{position:absolute;bottom:17%;letter-spacing:5px;color:#fff2d4;font-weight:800}
+.section{padding:78px 0}.section-head{text-align:center;max-width:680px;margin:0 auto 38px}.section-head .eyebrow{color:#9a6b20}.section h2{font: bold clamp(30px,4vw,44px)/1.15 Georgia,serif;margin:10px 0 12px}.section-head p{color:var(--muted);margin:0}
+.products{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.product{border:1px solid #e7dccb;border-radius:14px;overflow:hidden;background:#fff;box-shadow:0 8px 24px #321d0b0b;transition:.2s}.product:hover{transform:translateY(-4px);box-shadow:0 15px 30px #321d0b16}.product-art{height:155px;display:grid;place-items:center;background:linear-gradient(135deg,#ead9bd,#b98c58);color:#4b2b18;font-size:58px}.product:nth-child(3n+2) .product-art{background:linear-gradient(135deg,#ddd6c8,#9d8b70)}.product:nth-child(3n) .product-art{background:linear-gradient(135deg,#d8c3a1,#79583b);color:#fff2d4}.product-body{padding:17px}.product h3{margin:0 0 5px;font-size:18px}.product p{margin:0;color:var(--muted);font-size:14px}
+.about{background:#f0e8db}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}.about-card{background:var(--dark);color:#fff;padding:35px;border-radius:18px;border:1px solid var(--gold);box-shadow:0 18px 40px #25180e22}.about-card h3{font: bold 30px Georgia,serif;color:var(--gold2);margin:0 0 14px}.checks{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:20px}.check{padding:13px;border-left:3px solid var(--gold);background:#fff8}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:22px}.step{padding:20px;background:#fff;border-radius:12px;border:1px solid #e8dece}.step b{display:block;color:#9a6b20;font-size:24px}
+.contact{background:var(--dark);color:#fff}.contact .section-head p{color:#d6c9b7}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}.contact-panel{border:1px solid #72532c;background:#24190f;padding:26px;border-radius:14px}.contact-panel h3{margin-top:0;color:var(--gold2)}.contact-link{display:flex;gap:12px;align-items:center;padding:12px 0;border-bottom:1px solid #ffffff18}.contact-link:last-child{border:0}.contact-link span:first-child{font-size:22px;width:30px;text-align:center;color:var(--gold2)}.contact-note{color:#d6c9b7;font-size:14px}
+footer{background:#100c08;color:#c9b99f;padding:24px 0;text-align:center;font-size:13px}footer strong{color:var(--gold2)}
+@media(max-width:800px){nav{display:none;position:absolute;top:76px;left:0;right:0;background:#17110c;padding:20px 4%;flex-direction:column;align-items:flex-start;border-bottom:1px solid #76552d}nav.open{display:flex}.menu{display:inline-block}.hero-grid{grid-template-columns:1fr;padding:58px 0 45px;text-align:center}.hero p{margin-inline:auto}.actions{justify-content:center}.hero-art{min-height:280px}.emblem{width:270px}.products{grid-template-columns:repeat(2,1fr)}.about-grid,.contact-grid{grid-template-columns:1fr}}
+@media(max-width:520px){.products{grid-template-columns:1fr 1fr;gap:10px}.product-art{height:110px;font-size:42px}.product-body{padding:12px}.product h3{font-size:15px}.product p{font-size:12px}.checks,.steps{grid-template-columns:1fr}.hero h1{font-size:54px}.hero p{font-size:16px}.section{padding:58px 0}.brand{font-size:14px}}
+</style>
+</head>
+<body>
+<header>
+ <div class="wrap nav">
+  <a class="brand" href="#home"><span class="brand-mark">M</span><span>MAYA<small>FURNITURE</small></span></a>
+  <nav id="nav"><a href="#home" data-am="መነሻ" data-en="Home">መነሻ</a><a href="#products" data-am="ምርቶች" data-en="Products">ምርቶች</a><a href="#about" data-am="ስለ እኛ" data-en="About">ስለ እኛ</a><a href="#contact" data-am="ያግኙን" data-en="Contact">ያግኙን</a></nav>
+  <div class="nav-actions"><button class="lang" id="langBtn" type="button">EN</button><button class="menu" id="menuBtn" type="button" aria-label="Menu">☰</button></div>
+ </div>
+</header>
+<main>
+<section class="hero" id="home"><div class="wrap hero-grid">
+ <div><div class="eyebrow" data-am="ጥራት • ውበት • እምነት" data-en="QUALITY • STYLE • TRUST">ጥራት • ውበት • እምነት</div>
+ <h1>MAYA<span>FURNITURE</span></h1>
+ <p data-am="ለቤትዎና ለቢሮዎ የሚመጥን ዘመናዊ የእንጨት ዕቃ። በጥራት እንሠራለን፣ ለፍላጎትዎ እናበጃለን።" data-en="Beautiful, modern furniture for your home and office. Crafted with care and made to fit your needs.">ለቤትዎና ለቢሮዎ የሚመጥን ዘመናዊ የእንጨት ዕቃ። በጥራት እንሠራለን፣ ለፍላጎትዎ እናበጃለን።</p>
+ <div class="actions"><a class="btn primary" href="#products" data-am="ምርቶቻችንን ይመልከቱ" data-en="Explore Products">ምርቶቻችንን ይመልከቱ</a><a class="btn outline" href="#contact" data-am="ያግኙን" data-en="Contact Us">ያግኙን</a></div>
+ </div>
+ <div class="hero-art"><div class="emblem"><strong>M</strong><small>MAYA FURNITURE</small></div></div>
+</div></section>
+<section class="section" id="products"><div class="wrap"><div class="section-head"><div class="eyebrow" data-am="የምናመርታቸው" data-en="WHAT WE MAKE">የምናመርታቸው</div><h2 data-am="ለእያንዳንዱ ቦታ የሚሆን ዕቃ" data-en="Furniture for Every Space">ለእያንዳንዱ ቦታ የሚሆን ዕቃ</h2><p data-am="የሚፈልጉትን ዲዛይንና መጠን ይንገሩን፤ ከፍላጎትዎ ጋር እናስማማለን።" data-en="Tell us your preferred design and measurements. We can make furniture to suit your space.">የሚፈልጉትን ዲዛይንና መጠን ይንገሩን፤ ከፍላጎትዎ ጋር እናስማማለን።</p></div>
+ <div class="products">
+  <article class="product"><div class="product-art">🛏</div><div class="product-body"><h3 data-am="የመኝታ ዕቃዎች" data-en="Bedroom Furniture">የመኝታ ዕቃዎች</h3><p data-am="አልጋ፣ ቁምሳጥንና ሌሎችም" data-en="Beds, wardrobes and more">አልጋ፣ ቁምሳጥንና ሌሎችም</p></div></article>
+  <article class="product"><div class="product-art">🛋</div><div class="product-body"><h3 data-am="የመኖሪያ ዕቃዎች" data-en="Living Room Furniture">የመኖሪያ ዕቃዎች</h3><p data-am="ሶፋ፣ የቲቪ መደርደሪያና ሌሎችም" data-en="Sofas, TV units and more">ሶፋ፣ የቲቪ መደርደሪያና ሌሎችም</p></div></article>
+  <article class="product"><div class="product-art">🍽</div><div class="product-body"><h3 data-am="የመመገቢያ ዕቃዎች" data-en="Dining Furniture">የመመገቢያ ዕቃዎች</h3><p data-am="ጠረጴዛና ወንበሮች" data-en="Dining tables and chairs">ጠረጴዛና ወንበሮች</p></div></article>
+  <article class="product"><div class="product-art">🖥</div><div class="product-body"><h3 data-am="የቢሮ ዕቃዎች" data-en="Office Furniture">የቢሮ ዕቃዎች</h3><p data-am="ዴስክ፣ መደርደሪያና የሥራ ጠረጴዛ" data-en="Desks, shelves and workstations">ዴስክ፣ መደርደሪያና የሥራ ጠረጴዛ</p></div></article>
+  <article class="product"><div class="product-art">🍳</div><div class="product-body"><h3 data-am="ኪችን ካቢኔቶች" data-en="Kitchen Cabinets">ኪችን ካቢኔቶች</h3><p data-am="ዘመናዊ የኩሽና መደርደሪያዎች" data-en="Modern kitchen storage solutions">ዘመናዊ የኩሽና መደርደሪያዎች</p></div></article>
+  <article class="product"><div class="product-art">🚪</div><div class="product-body"><h3 data-am="የውስጥ በሮች" data-en="Interior Doors">የውስጥ በሮች</h3><p data-am="የተለያዩ ዲዛይኖችና መጠኖች" data-en="Various designs and sizes">የተለያዩ ዲዛይኖችና መጠኖች</p></div></article>
+  <article class="product"><div class="product-art">🗄</div><div class="product-body"><h3 data-am="ቁምሳጥኖች" data-en="Wardrobes">ቁምሳጥኖች</h3><p data-am="በትዕዛዝ የሚሠሩ ቁምሳጥኖች" data-en="Made-to-order wardrobes">በትዕዛዝ የሚሠሩ ቁምሳጥኖች</p></div></article>
+  <article class="product"><div class="product-art">🏢</div><div class="product-body"><h3 data-am="ሪሴፕሽንና ካውንተር" data-en="Reception & Counters">ሪሴፕሽንና ካውንተር</h3><p data-am="ለቢሮና ለንግድ ቦታዎች" data-en="For offices and commercial spaces">ለቢሮና ለንግድ ቦታዎች</p></div></article>
+  <article class="product"><div class="product-art">⚒</div><div class="product-body"><h3 data-am="ሜታል ጌቶች" data-en="Metal Gates">ሜታል ጌቶች</h3><p data-am="በትዕዛዝ የሚሠሩ ጌቶች" data-en="Custom-made gates">በትዕዛዝ የሚሠሩ ጌቶች</p></div></article>
+ </div>
+</div></section>
+<section class="section about" id="about"><div class="wrap about-grid">
+ <div><div class="eyebrow" data-am="ስለ ማያ" data-en="ABOUT MAYA">ስለ ማያ</div><h2 data-am="ጥራት ያለው ሥራ ከማያ" data-en="Quality Craftsmanship by Maya">ጥራት ያለው ሥራ ከማያ</h2><p data-am="ማያ ፈርኒቸር ለቤትና ለቢሮ የሚሆኑ የተለያዩ ዕቃዎችን በትዕዛዝ ለማምረት የተዘጋጀ የፈርኒቸር ብራንድ ነው። የደንበኛን ፍላጎት፣ ቦታና በጀት በማዳመጥ ተስማሚ መፍትሄ እናቀርባለን።" data-en="Maya Furniture creates made-to-order furniture for homes and offices. We listen to each customer's needs, space and budget to create a suitable solution.">ማያ ፈርኒቸር ለቤትና ለቢሮ የሚሆኑ የተለያዩ ዕቃዎችን በትዕዛዝ ለማምረት የተዘጋጀ የፈርኒቸር ብራንድ ነው። የደንበኛን ፍላጎት፣ ቦታና በጀት በማዳመጥ ተስማሚ መፍትሄ እናቀርባለን።</p></div>
+ <div class="about-card"><h3 data-am="Design • Make • Live Better" data-en="Design • Make • Live Better">Design • Make • Live Better</h3><p data-am="የምንተኩርባቸው" data-en="What we focus on">የምንተኩርባቸው</p><div class="checks"><div>✓ <span data-am="ጥራት ያለው ሥራ" data-en="Quality craftsmanship">ጥራት ያለው ሥራ</span></div><div>✓ <span data-am="ዘመናዊ ዲዛይን" data-en="Modern design">ዘመናዊ ዲዛይን</span></div><div>✓ <span data-am="በትዕዛዝ ማምረት" data-en="Custom production">በትዕዛዝ ማምረት</span></div><div>✓ <span data-am="ተስማሚ ዋጋ" data-en="Fair pricing">ተስማሚ ዋጋ</span></div></div></div>
+ </div></section>
+<section class="section"><div class="wrap"><div class="section-head"><div class="eyebrow" data-am="እንዴት እንሠራለን?" data-en="HOW IT WORKS">እንዴት እንሠራለን?</div><h2 data-am="ትዕዛዝዎን በቀላሉ ያስጀምሩ" data-en="Start Your Custom Order">ትዕዛዝዎን በቀላሉ ያስጀምሩ</h2></div><div class="steps"><div class="step"><b>01</b><strong data-am="ይምረጡ" data-en="Choose">ይምረጡ</strong><div data-am="የሚፈልጉትን ዕቃና ዲዛይን ይምረጡ።" data-en="Choose the item and design you want.">የሚፈልጉትን ዕቃና ዲዛይን ይምረጡ።</div></div><div class="step"><b>02</b><strong data-am="ያነጋግሩን" data-en="Talk to us">ያነጋግሩን</strong><div data-am="መጠን፣ ቀለምና ዝርዝር ፍላጎትዎን ይንገሩን።" data-en="Tell us your measurements, colors and requirements.">መጠን፣ ቀለምና ዝርዝር ፍላጎትዎን ይንገሩን።</div></div><div class="step"><b>03</b><strong data-am="ትዕዛዝዎን ያረጋግጡ" data-en="Confirm your order">ትዕዛዝዎን ያረጋግጡ</strong><div data-am="ዝርዝሩን ከተስማማን በኋላ ሥራውን እንጀምራለን።" data-en="Once the details are agreed, we begin production.">ዝርዝሩን ከተስማማን በኋላ ሥራውን እንጀምራለን።</div></div></div></div></section>
+<section class="section contact" id="contact"><div class="wrap"><div class="section-head"><div class="eyebrow" data-am="እንገናኝ" data-en="LET'S CONNECT">እንገናኝ</div><h2 data-am="የሚፈልጉትን ዕቃ አብረን እንሥራ" data-en="Let's Make Something for You">የሚፈልጉትን ዕቃ አብረን እንሥራ</h2><p data-am="ለጥያቄ፣ ለዋጋ ጥያቄና ለትዕዛዝ በስልክ ያግኙን።" data-en="Call us for questions, quotes and custom orders.">ለጥያቄ፣ ለዋጋ ጥያቄና ለትዕዛዝ በስልክ ያግኙን።</p></div>
+ <div class="contact-grid"><div class="contact-panel"><h3 data-am="የስልክ ቁጥሮች" data-en="Call Us">የስልክ ቁጥሮች</h3><a class="contact-link" href="tel:+251999999177"><span>☎</span><strong>+251 999 999 177</strong></a><a class="contact-link" href="tel:+251715515115"><span>☎</span><strong>+251 715 515 115</strong></a><p class="contact-note" data-am="በትዕዛዝ ለሚሠሩ ዕቃዎች በቀጥታ ያነጋግሩን።" data-en="Contact us directly about made-to-order furniture.">በትዕዛዝ ለሚሠሩ ዕቃዎች በቀጥታ ያነጋግሩን።</p></div>
+ <div class="contact-panel"><h3 data-am="ማህበራዊ ገጾች" data-en="Social Media">ማህበራዊ ገጾች</h3><div class="contact-link"><span>♪</span><div><strong>TikTok</strong><br><span>@maya+furniture</span></div></div><div class="contact-link"><span>➤</span><div><strong>Telegram</strong><br><span>@maya+furniture</span></div></div><p class="contact-note" data-am="የማህበራዊ ገጾች አድራሻዎች ከመለጠፋቸው በፊት ትክክለኛነታቸውን ያረጋግጡ።" data-en="Please verify your social account usernames before publishing.">የማህበራዊ ገጾች አድራሻዎች ከመለጠፋቸው በፊት ትክክለኛነታቸውን ያረጋግጡ።</p></div></div>
+</div></section>
+</main>
+<footer><div class="wrap"><strong>MAYA FURNITURE</strong> · Design • Make • Live Better<br><span>© <span id="year"></span> Maya Furniture. All rights reserved.</span></div></footer>
+<script>
+const btn=document.getElementById('langBtn');let language='am';
+function setLanguage(lang){language=lang;document.documentElement.lang=lang;document.querySelectorAll('[data-am]').forEach(el=>{el.textContent=el.dataset[lang]});btn.textContent=lang==='am'?'EN':'አማ';}
+btn.addEventListener('click',()=>setLanguage(language==='am'?'en':'am'));
+document.getElementById('menuBtn').addEventListener('click',()=>document.getElementById('nav').classList.toggle('open'));
+document.querySelectorAll('nav a').forEach(a=>a.addEventListener('click',()=>document.getElementById('nav').classList.remove('open')));
+document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+</body></html>
